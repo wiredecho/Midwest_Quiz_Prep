@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Philip C. Lee - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/quiz-1.js"></script>
+
+    <style>
+        .answers li { 
+                list-style: upper-alpha; 
+        } 
+
+        label { 
+            margin-left: 0.5em; 
+            cursor: pointer; 
+        } 
+
+        #results { 
+            background: #dddada; 
+            color: 000000; 
+            padding: 3px; 
+            text-align: center; 
+            width: 200px; 
+            cursor: pointer; 
+            border: 1px solid gray; 
+        }
+
+        #results:hover { 
+            background: #3d91b8; 
+            color: #ffffff; 
+            padding: 3px; 
+            text-align: center; 
+            width: 200px; 
+            cursor: pointer; 
+            border: 1px solid gray; 
+        } 
+
+        #categorylist { 
+            margin-top: 6px; 
+            display: none; 
+        } 
+
+        #category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11, #category12, #category13 { 
+            display: none; 
+        }
+
+        #closing {
+            display: none;
+            font-style: italic;
+        }
+    </style>
+    
+
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+
+    
+
+
+    <!-- background1 div -->
+
+   
+
+
+    <div class="container">
+        <div class="section">
+            <h4 class="blue-grey-text" id="namelogo">Study Hall</h4>
+            <hr/>
+
+            <div class="card-panel">
+                <blockquote>
+                    This section is here to help my kids with some of the school projects they have coming up.
+                </blockquote>
+            </div>
+
+
+            <p class="question">1. What is the capital of North Dakota?</p>        
+
+            <ul class="answers">            
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Blisplashsplashy</label><br/>          
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Balloonface</label><br/>            
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Bismark</label><br/>            
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Booboopoo</label><br/>       
+            </ul>        
+
+
+            <p class="question">2. What is the capital of Minnesota?</p>        
+
+            <ul class="answers">            
+                <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">St. Pikachu</label><br/>           
+                <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">St. Babyface</label><br/>            
+                <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Sir Potato</label><br/>           
+                <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">St. Paul</label><br/>       
+            </ul>        
+
+            <p class="question">3. What is the capital of Nebraska and daddy's favorite president?</p>        
+
+            <ul class="answers">            
+                <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Sausage</label><br/>            
+                <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Lincoln</label><br/>            
+                <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Coocooclocker</label><br/>           
+                <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Garfield</label><br/>       
+            </ul>        
+
+            <p class="question">4. What is the capital of Missouri?</p>        
+
+            <ul class="answers">           
+                <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Zozoland</label><br/>            
+                <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Mooshoo River City</label><br/>            
+                <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Jefferson City</label><br/>            
+                <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Lego Town</label><br/>        
+            </ul>        
+
+            <p class="question">5. What is the capital of Indiana?</p>        
+
+            <ul class="answers">            
+                <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Jones</label><br/>            
+                <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Megalopolis</label><br/>            
+                <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">India</label><br/>           
+                <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Indiapolis</label><br/>        
+            </ul>        
+
+            <p class="question">6. What is the capital of Michigan?</p>        
+
+            <ul class="answers">            
+            <input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Lalalalala City</label><br/>            
+            <input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Singsing Soup</label><br/>            
+            <input type="radio" name="q6" value="c" id="q6c"><label for="q6c">linglonglang</label><br/>            
+            <input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Lansing</label><br/>        
+            </ul>       
+
+            <p class="question">7. What is the capital of Wisconsin?</p>        
+
+            <ul class="answers">            
+                <input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Maddie Lockett</label><br/>            
+                <input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Mickey's Toon Town</label><br/>            
+                <input type="radio" name="q7" value="c" id="q7c"><label for="q7c">Madison</label><br/>            
+                <input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Cheese Fart</label><br/>        
+            </ul>        
+
+            <p class="question">8. What is the capital of South Dakota?</p>        
+
+            <ul class="answers">            
+                <input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Pierre</label><br/>            
+                <input type="radio" name="q8" value="b" id="q8b"><label for="q8b">Pierre the Skunk</label><br/>            
+                <input type="radio" name="q8" value="c" id="q8c"><label for="q8c">Pierre the drink</label><br/>            
+                <input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Skylanders</label><br/>       
+            </ul>        
+
+            <p class="question">9. What is the capital of Kansas?</p>        
+
+            <ul class="answers">            
+                <input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Torpedo</label><br/>            
+                <input type="radio" name="q9" value="b" id="q9b"><label for="q9b">Teepee</label><br/>            
+                <input type="radio" name="q9" value="c" id="q9c"><label for="q9c">Peekaboo</label><br/>            
+                <input type="radio" name="q9" value="d" id="q9d"><label for="q9d">Topeka</label><br/>        
+            </ul>        
+
+            <p class="question">10. What is the capital of Ohio?</p>        
+
+            <ul class="answers">           
+                <input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Christopher Columbus</label><br/>            
+                <input type="radio" name="q10" value="b" id="q10b"><label for="q10b">Columbus</label><br/>            
+                <input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Chef Pepperjack</label><br/>            
+                <input type="radio" name="q10" value="d" id="q10d"><label for="q10d">Kylo Ren</label><br/>        
+            </ul>  
+
+            <p class="question">11. What is the capital of Iowa?</p> 
+
+            <ul class="answers">           
+                <input type="radio" name="q11" value="a" id="q11a"><label for="q11a">Des Moines</label><br/>            
+                <input type="radio" name="q11" value="b" id="q11b"><label for="q11b">Big Mac</label><br/>            
+                <input type="radio" name="q11" value="c" id="q11c"><label for="q11c">Mes Moomoos</label><br/>            
+                <input type="radio" name="q11" value="d" id="q11d"><label for="q11d">Kylo Ren</label><br/>        
+            </ul>        
+
+            
+            <br/>
+            <div id="results">            
+                Show me the results!       
+            </div> 
+                                      
+
+            <div id="category1">            
+                <p>              
+                <strong>What is the capital of North Dakota?:</strong> The correct answer is the <strong>Bismark</strong>.</p>        
+            </div>        
+
+            <div id="category2">            
+                <p>              
+                <strong>What is the capital of Minnesota?:</strong> The correct answer is <strong>St. Paul</strong>.</p>        
+            </div>        
+
+            <div id="category3">            
+                <p>                
+                <strong>What is the capital of Nebraska and daddy's favorite presient?:</strong> The correct answer is <strong>Lincoln</strong>.</p>        
+            </div>        
+
+            <div id="category4">            
+                <p>               
+                    <strong>What is the capital of Missouri?:</strong> The correct answer is <strong>Jefferson City</strong>.
+                </p>        
+            </div>        
+
+            <div id="category5">            
+                <p>                
+                <strong>What is the capital of Indiana?</strong> The correct answer is <strong>Indianopolis</strong>.</p>        
+            </div>        
+
+            <div id="category6">            
+                <p>                
+                <strong>What is the capital of Michigan?:</strong> The correct answer is <strong>Lansing</strong>.</p>        
+            </div>        
+
+            <div id="category7">            
+                <p>                
+                <strong>What is the capital of Wisconsin?:</strong> The correct answer is <strong>Madison</strong>.</p>        
+            </div>        
+
+            <div id="category8">            
+                <p>               
+                <strong>What is the capital of South Dakota?:</strong> The correct answer is <strong>Pierre</strong>.</p>        
+            </div>        
+
+            <div id="category9">           
+                <p>               
+                <strong>What is the capital of Kansas?:</strong> The correct answer is <strong>Topeka</strong>.</p>        
+            </div>        
+
+            <div id="category10">            
+                <p>                
+                <strong>What is the capital of Ohio?:</strong> The correct answer is <strong>Columbus</strong>.</p>        
+            </div>  
+
+            <div id="category11">            
+                <p>                
+                <strong>What is the capital of Iowa?:</strong> The correct answer is <strong>Des Moines</strong>.</p>        
+            </div>       
+
+            <div id="category12">            
+                <p>                
+                You answered them all right!</p>
+                <button class="waves-effect waves-light btn" onclick="myFunction()">Reset</button>
+
+                <script>
+                    function myFunction() {
+                        location.reload();
+                    }
+                </script>       
+            </div>
+            
+            <div id="results">
+                <button class="waves-effect waves-light btn" onclick="myFunction()">Reset</button>
+
+                <script>
+                    function myFunction() {
+                        location.reload();
+                    }
+                </script>
+            </div>
+
+        </div>
+
+
+
+       
+
+
+  <!--  Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
